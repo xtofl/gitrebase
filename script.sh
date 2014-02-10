@@ -49,8 +49,12 @@ git commit -m "fix feature 1.b"
 # 'development' while it should have been on 'feature1'...
 
 #attempt 1
-git rebase feature1 
-#=> my development branch will point to latest commit
+# git rebase feature1 
+# => my development branch will point to latest commit
+
+#attempt 2
+git checkout feature1
+git rebase development
 
 gitk --all
 
